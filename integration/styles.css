@@ -1,0 +1,529 @@
+body {
+
+    height: 100vh;
+}
+/* Style du Header */
+.highPage {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.highPicture {
+
+    margin-top: 10px;
+    width: 380px;
+    height: 380px;
+    transform: rotate(90deg);
+    border-radius: 50%; 
+    border-style: outset;
+    border-width: 3px;
+    border-color: #dfaf2c;
+
+}
+
+.highTitle {
+
+    color: #303030;
+    margin-top: 150px;
+    letter-spacing: 1em;
+    font-family: 'Cookie', cursive;
+}
+
+hr {
+
+    background-color: #dfaf2c;
+    height: 2px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+}
+
+/* Style du Main */
+.mainSection {
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    perspective: 600px;/* On donne une perspective à un conteneur d'élément pour lui donné une profondeur */
+    perspective-origin: center;/* On définit l'origine du point de fuite, c'est ce qui va donner l'impression qu'on va regarder de tel ou tel côté */
+}
+
+.mainSectionInSection {
+
+    background-color: #dfaf2c;
+    transform: translateZ(100px);/* Je fais translater sur l'axe z en profondeur, la je rapproche de 100px */
+    transform: scale3d(1, 2, 2);/* Agrandit un objet selon un facteur sx sy sz sur les différents axes, ici je double le volume en ordonnée et en profondeur */
+}
+
+.mainLink {
+
+    letter-spacing: 0.5em;
+    font-family: 'Amiri', serif;
+    text-decoration: none;
+    color: #303030;
+    padding: 25px;
+    font-size: larger;
+}
+
+#formations {
+
+    text-align: center;
+    letter-spacing: 0.5em;
+    font-family: 'Amiri', serif;
+    margin-top: 100px;
+    font-size: larger;
+    color: #303030;
+}
+
+.mainDivFormations {
+
+    font-family: 'Amiri', serif;
+    width: 60%; 
+    margin: auto; 
+}
+
+.mainDivFormations .mainUlFormations {
+
+    margin: 20px 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.mainDivFormations .mainUlFormations li { 
+
+    list-style-type: disc;
+    margin: auto;
+    margin-left: 230px;
+    min-height: 50px;
+    border-left: 2px dashed #303030;
+    padding: 30px 0 50px 30px;
+    position: relative;
+}
+
+#expériences {
+
+    text-align: center;
+    letter-spacing: 0.5em;
+    font-family: 'Amiri', serif;
+    margin-top: 100px;
+    font-size: larger;
+    color: #303030;
+}
+
+.mainSectionExperience {
+
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    font-family: 'Amiri', serif;
+}
+
+.mainDivLeftAcossExperience {
+
+    max-width: 40%;
+    display: table-cell;
+    border-right: 2px solid #dfaf2c;
+    position: absolute;
+    height: 400px;
+
+}
+
+.mainTitleAcossExperience {
+
+    color: #dfaf2c;
+    text-align: center;
+}
+
+.mainImgAcossExperience {
+
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+}
+
+.mainDivRightAcossExperience {
+
+    float: right;
+    max-width: 60%;
+    vertical-align: auto;
+    height: 400px;
+}
+
+.mainParagraphAcossExperience {
+
+    padding: 3px;
+}
+
+.mainHrHorizontalExperience {
+
+    background-color: #dfaf2c;
+    height: 2px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+}
+
+.mainDivLeftCandeFruitExperience {
+
+    max-width: 60%;
+    vertical-align: auto;
+    height: 400px;
+}
+
+.mainParagraphCandeFruitExperience {
+
+    padding: 7px;
+}
+
+.mainDivRightCandeFruitExperience {
+
+    max-width: 40%;
+    display: table-cell;
+    border-left: 2px solid #dfaf2c;
+    height: 400px;
+    position: relative;
+    left: 850px;
+    bottom: 417px;
+}
+
+.mainTitleCandeFruitExperience {
+
+    color: #dfaf2c;
+    text-align: center;
+}
+
+.mainImgCandeFruitExperience {
+
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+}
+
+.mainHrHorizontalCandeFruitExperience {
+
+    background-color: #dfaf2c;
+    height: 2px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    position: relative;
+    bottom: 442px;
+}
+
+.mainDivLeftMacDoExperience {
+
+    max-width: 40%;
+    display: table-cell;
+    border-right: 2px solid #dfaf2c;
+    height: 350px;
+    position: relative;
+    right: 50px;
+    bottom: 451px;
+    left: 10px;
+}
+
+.mainTitleMacDoExperience {
+
+    color: #dfaf2c;
+    text-align: center;
+}
+
+.mainImgMacDoExperience {
+
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+}
+
+.mainParagraphMacDoExperience {
+
+    padding: 7px;
+    max-width: 60%;
+    position: relative;
+    left: 400px;
+    bottom: 800px;
+    
+}
+
+#travaux {
+
+    text-align: center;
+    letter-spacing: 0.5em;
+    font-family: 'Amiri', serif;
+    font-size: larger;
+    color: #303030;
+    position: relative;
+    bottom: 690px;
+}
+
+.mainSectionTravaux {
+
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto; 
+    position: relative;
+    bottom: 650px;
+   
+}
+
+.mainDivOShopTravaux {
+
+    max-width: 100%; 
+    background-color: #303030;
+}
+
+.mainTitleOShopTravaux {
+
+    padding-top: 50px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-family: 'Amiri', serif;
+    color: white;
+}
+
+.mainImgOShopTravaux {
+
+    width: 80%;
+    padding-left: 100px;
+}
+
+.mainParagraphOShopTravaux {
+
+    color: white;
+    padding: 5px;
+}
+
+.mainTagOShopTravaux {
+
+    background-color: #dfaf2c;
+    color: #303030;
+    padding: 12px;
+}
+
+.mainTitleOBlogTravaux {
+
+    padding-top: 50px;
+    letter-spacing: 0.3em;
+    font-family: 'Amiri', serif;
+    color: #303030;
+    text-align: center;
+}
+
+.mainDivOBlogTravaux {
+
+    max-width: 100%; 
+    background-color: #303030;
+}
+
+.mainTitleOBlogTravaux {
+
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-family: 'Amiri', serif;
+    color: white;
+}
+
+.mainImgOBlogTravaux {
+
+    width: 80%;
+    padding-left: 100px;
+}
+
+.mainParagraphOBlogTravaux {
+
+    color: white;
+    padding: 5px;
+}
+
+.mainTagOBlogTravaux {
+
+    background-color: #dfaf2c;
+    color: #303030;
+    padding: 12px;
+}
+
+.mainTitleKiemtaoTravaux {
+
+    padding-top: 50px;
+    letter-spacing: 0.3em;
+    font-family: 'Amiri', serif;
+    color: #303030;
+    text-align: center;
+}
+
+.mainDivKiemtaoTravaux {
+
+    max-width: 100%; 
+    background-color: #303030;
+}
+
+.mainTitleKiemtaoTravaux {
+
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-family: 'Amiri', serif;
+    color: white;
+}
+
+.mainImgKiemtaoTravaux {
+
+    width: 90%;
+    padding-left: 50px;
+}
+
+.mainParagraphKiemtaoTravaux {
+
+    color: white;
+    padding: 5px;
+}
+
+.mainTagKiemtaoTravaux {
+
+    background-color: #dfaf2c;
+    color: #303030;
+    padding: 12px;
+}
+
+.mainTitleTodoListTravaux {
+
+    padding-top: 50px;
+    letter-spacing: 0.3em;
+    font-family: 'Amiri', serif;
+    color: #303030;
+    text-align: center;
+}
+
+.mainDivTodoListTravaux {
+
+    max-width: 100%; 
+    background-color: #303030;
+}
+
+.mainTitleTodoListTravaux {
+
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-family: 'Amiri', serif;
+    color: white;
+}
+
+.mainImgTodoListTravaux {
+
+    width: 80%;
+    padding-left: 100px;
+}
+
+.mainParagraphTodoListTravaux {
+
+    color: white;
+    padding: 5px;
+}
+
+.mainTagTodoListTravaux {
+
+    background-color: #dfaf2c;
+    color: #303030;
+    padding: 12px;
+}
+
+.mainTitleSpaceInvadersTravaux {
+
+    padding-top: 50px;
+    letter-spacing: 0.3em;
+    font-family: 'Amiri', serif;
+    color: #303030;
+    text-align: center;
+}
+
+.mainDivSpaceInvadersTravaux {
+
+    max-width: 100%; 
+    background-color: #303030;
+}
+
+.mainTitleSpaceInvadersTravaux {
+
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-family: 'Amiri', serif;
+    color: white;
+}
+
+.mainImgSpaceInvadersTravaux {
+
+    width: 80%;
+    padding-left: 100px;
+}
+
+.mainParagraphSpaceInvadersTravaux {
+
+    color: white;
+    padding: 5px;
+}
+
+.mainTagSpaceInvadersTravaux {
+
+    background-color: #dfaf2c;
+    color: #303030;
+    padding: 12px;
+}
+
+.mainHr {
+
+    position: relative;
+    bottom: 650px; 
+}
+
+.downPage {
+
+    width: 60%;
+    position: relative;
+    bottom: 630px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.downSectionSocialMedia {
+
+    max-width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.logo {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.iconLogo {
+
+    margin-left: 25px;
+}
+
+.downSectionContact {
+
+    max-width: 50%;
+    position: relative;
+    left: 600px;
+    bottom: 55px;
+}
+
+.downSectionContactMailAndNumber {
+
+    padding-left: 75px;
+}
