@@ -27,7 +27,7 @@ button {
     background-color: #FACC2E;
     border: none;
 }
-
+/* Effet au survol du boutton */
 button:hover {
 
     cursor: pointer;
@@ -91,7 +91,7 @@ h2 {
     flex-direction: column;/* Les boutons sont affiché en colonne */
 
 }
-/* Les paragraphes de la partie introduction */
+/* Les paragraphes, section introduction */
 .introParagraph {
 
     margin-top: 50px;
@@ -100,7 +100,7 @@ h2 {
     padding-left: 10px;
     line-height: 2rem;/* Espacement entre les lignes */
 }
-/* Les paragraphes de la partie formation */
+/* Les paragraphes, section formation */
 .mainParagraphFormation {
 
     margin-top: 20px;
@@ -109,27 +109,30 @@ h2 {
     padding-left: 10px;
     line-height: 2rem;
 }
-/* La div (gauche->penser pour flexbox) contenant un titre et une image */
+/* La div (gauche->penser pour flexbox) contenant un titre et une image, section expériences */
 .mainLeftDivExperience {
 
     width: 80%;/* La div prend 80% dans la largeur de la page */
     margin-left: auto;
     margin-right: auto;
+    display: flex;/* Affichage pour gérer le contenu à l'intérieur de la div */
+    flex-direction: column;
+    align-items: center;/* Centrer l'image au centre sur l'axe transversal */
+    justify-content: center;/* Centrer l'image sur la ligne */
 }
-/* Titre de la div de (gauche)*/
+/* Titre de la div de (gauche) section expériences */
 .mainTitleExperience {
 
     color: #FACC2E;
     text-align: center;
     letter-spacing: 0.25em;
 }
-/* Image de la div de (gauche) */
+/* Image de la div de (gauche) section expériences */
 .mainImgExperience {
 
-    width: 250px;
-    padding-left: 50px;
+    width: 25%;
 }
-/* Paragraphe de la div de (droite) */
+/* Paragraphe de la div de (droite) section expériences  */
 .mainParagraphExperience {
 
     color: #585858;
@@ -137,6 +140,75 @@ h2 {
     letter-spacing: 0.1em;
     padding-left: 10px;
     line-height: 2rem;
+}
+/* La Div qui contient un titre une image et 2 paragraphes, section travaux */
+.mainDivTravaux {
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+/* Titre, section travaux */
+.mainTitleTravaux {
+
+    color: #FACC2E;
+    text-align: center;
+    letter-spacing: 0.25em;
+}
+/* Image, section travaux */
+.mainImgTravaux {
+
+    width: 100%;
+}
+/* Paragraphe, section travaux */
+.mainParagraphTravaux {
+
+    color: #585858;
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+    padding-left: 10px;
+    line-height: 1.5rem;
+    margin-top: 5px;
+
+}
+/* Tag, section travaux */
+.mainTagTravaux {
+
+    background-color: #FACC2E;
+    border-style: none;
+    margin-top: 2px;
+    padding: 3px;
+
+
+}
+
+/* Style du Footer */
+
+/* Titre du footer */
+.downTitle {
+
+    color: #585858;
+    text-align: center;
+}
+/* Div entourant les deux logos, fait partie de la section social media du footer */
+.downDivLogo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+/* Icône */
+.iconLogo {
+
+    margin-left: 10px;
 }
 
 /* Responsive */
@@ -180,10 +252,6 @@ h2 {
         margin-left: auto;
         margin-right: auto;
     }
-    .mainImgExperience {
-
-        padding-left: 100px;
-    }
     .mainRightDivExperience {
 
         width: 80%;
@@ -223,10 +291,6 @@ h2 {
         margin-left: auto;
         margin-right: auto;
     }
-    .mainImgExperience {
-
-        padding-left: 225px;/* A partir de 900px l'image sera décaler de 225px vers la droite pour quel soit centrer (technique à revoir peut-être utiliser flexbox) */
-    }
     .mainRightDivExperience {
 
         width: 60%;
@@ -262,10 +326,6 @@ h2 {
         width: 40%;
         margin-left: auto;
         margin-right: auto;
-    }
-    .mainImgExperience {
-
-        padding-left: 325px;
     }
     .mainRightDivExperience {
 
