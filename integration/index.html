@@ -13,7 +13,7 @@
         <title>Web CV Justin Bellanger</title>
     </head>
 
-    <body>
+    <body class="bodyPage">
         <!-- Header haut de la page avec une image séparant mon prénom et mon nom -->
         <header class="highPage">
             <h1 class="highTitleName">Justin</h1>
@@ -27,22 +27,27 @@
         <main class="mainPage">
             <!-- Menu de navigation avec 4 boutons, représentant les 4 parties du site -->
             <nav class="nav">
-                <button class="btn"><a href="#introduction">Introduction</a></button>
-                <button class="btn"><a href="#formations">Formations</a></button>
-                <button class="btn"><a href="#expériences">Expériences</a></button>
-                <button class="btn"><a href="#travaux">Travaux</a></button>
+                <button class="btn"><a href="#introduction" class="linkPage">Introduction</a></button>
+                <button class="btn"><a href="#formations" class="linkPage">Formations</a></button>
+                <button class="btn"><a href="#expériences" class="linkPage">Expériences</a></button>
+                <button class="btn"><a href="#travaux" class="linkPage">Travaux</a></button>
             </nav>
+
+            <!-- Boutton qui va changer l'apparence du site -->
+            <div class="changeColor">
+                <button id="darkMode">Activer le mode sombre</button>
+            </div>
 
             <!-- Titre première partie -->
             <h2 id="introduction">Introduction</h2>
             <!-- Section introduction avec 3 paragraphes -->
             <section class="presentation">
-                <p class="introParagraph">Je m'appelle Justin Bellanger j'ai 23 ans et je vis près d'Angers.
+                <p class="paragraphPage">Je m'appelle Justin Bellanger j'ai 23 ans et je vis près d'Angers.
                     j'aime lire, faire du sport (courrir, nager), jouer au jeux vidéos, regarder des films et des séries et pleins d'autres choses.
                     Je suis quelqu'un de timide et reserver mais curieux, persévérant et j'ai l'envie d'apprendre.
                 </p>
 
-                <p class="introParagraph">J'ai eu une scolarité je dirais faite d'hésitation et de doutes sur mes choix d'orientation.
+                <p class="paragraphPage">J'ai eu une scolarité je dirais faite d'hésitation et de doutes sur mes choix d'orientation.
                     Je vais commencer à parler de mon parcours au lycée qui est banal une seconde générale et technologique.
                     Puis j'ai voulu continuer dans le domaine de l'architecture avec une 1ère STI2D en architecture et construction,
                     la c'est la 1ère fois que j'hésite sur mon parcours, je me dit que l'architecture à beau être intéressante je trouve qu'il y a beaucoup de théorie de choses à connaitre
@@ -52,7 +57,7 @@
                     Le stage se passe bien, j'apprend des choses mais je me sentais vraiment pas à ma place dans ce milieu, à la fin du stage je me désinscrit de la formation, je me retrouve sans rien ni école ni formation.
                 </p>
 
-                <p class="introParagraph">Il me semble qu'après ça j'ai été voir un consiller d'orientation au CIO à Angers, le même que j'avais en seconde, on parle et je me dis pourquoi pas les métiers du numérique et l'informatique.
+                <p class="paragraphPage">Il me semble qu'après ça j'ai été voir un consiller d'orientation au CIO à Angers, le même que j'avais en seconde, on parle et je me dis pourquoi pas les métiers du numérique et l'informatique.
                     Je m'inscrit donc au Lycée Saint-Aubin-la-Salle à Angers pour une 1ère STI2D option systèmes d'information et numérique.
                 </p>
             </section>
@@ -63,13 +68,13 @@
             <h2 id="formations">Formations</h2>
             <!-- Section formation avec 3 paragraphes -->
             <section class="mainDivFormations">
-                <p class="mainParagraphFormation">
+                <p class="paragraphPage">
                     Mon parcours lycée commence de 2015 à 2017 ou j'ai fait un Bac Techno STI2D option Systèmes d'Information et Numérique.
                     Cette option nous amenait à étudier les méthodes de transmission avec le numérique.
                     J'y ai étudier aussi les cartes électroniques (les composants et leur rôle dans la carte).
                 </p>
                     
-                <p class="mainParagraphFormation"> 
+                <p class="paragraphPage"> 
                     De 2017 à 2019, j'ai poursuivis mes études dans la continuité de mon cursus BAC avec un BTS Systèmes Numériques option A : Informatique et Réseaux.
                     Dans ce BTS scindé principalement en 2 parties (partie dèv logiciel et partie réseaux), 
                     en dèv logiciel on apprenait les langages C/C++, le concept de programmation orienté objet, 
@@ -78,7 +83,7 @@
                     différent protocoles (ARP, IMCP, TCP/IP), on a aussi vu la plannification et la gestion de projet.
                 </p>
 
-                <p class="mainParagraphFormation">
+                <p class="paragraphPage">
                     Du 09/03/2020 au 15/06/2020, en plein pendant la période du confinement j'ai fait une formation de développeur web avec l'école O'Clock en 100% à distance 
                     de chez moi. Durant la formation, j'ai appris les langages côté front (Html, CSS, JavaScript) et côté 
                     back (PHP et MySql) mais aussi des Framework (Bootstrap en front et Lumen en back), j'ai également vu plusieurs
@@ -95,19 +100,19 @@
             <section class="mainSectionExperience">
                 <!-- La div contient une image et un titre -->
                 <div class="mainLeftDivExperience">
-                    <h3 class="mainTitleExperience">Acoss Nancy</h3>
+                    <h3 class="mainTitlePage">Acoss Nancy</h3>
                     <img class="mainImgExperience" src="images/acoss.png" alt="L'entreprise Acoss à Nancy ou j'ai fait mon stage">
                 </div>
                 <!-- La div contient un paragraphe descriptif -->
                 <div class="mainRightDivExperience">
-                    <p class="mainParagraphExperience">
+                    <p class="paragraphPage">
                         Dans le cadre de mon BTS, j'ai effectué un stage me permettant d'acquérir de l'expérience mais
                         aussi de rentrer plus en profondeur dans le monde de l'entreprise.
 
                         Le stage c'est fait à l'Acoss Nancy, une entreprise qui gère et traîte informatiquement les dossiers des clients 
                         Urssaf.
 
-                        La refonte du site se faisait à l'aide d'Angular, j'ai pendant une semaine et demi et un peu avant le stage pratiquer Angular car je
+                        La refonte du site se faisait à l'aide d'Angular le Framework Front-end de Google, j'ai pendant une semaine et demi et un peu avant le stage pratiquer Angular car je
                         le rappel je n'avais à par Html/CSS que j'ai appris par moi-même aucune connaissance en développement web avec mon BTS qui était orienté dèv logiciel et réseaux.
 
                         J'étais avec une autre stagiaire qui était elle en licence informatique, nous avons d'abord fait le tutoriel la tour des héros qui avait
@@ -119,12 +124,12 @@
                 </div>
                 
                 <div class="mainLeftDivExperience">
-                    <h3 class="mainTitleExperience">Candé Fruit</h3>
+                    <h3 class="mainTitlePage">Candé Fruit</h3>
                     <img class="mainImgExperience" src="images/verger.jpeg">
                 </div>
 
                 <div class="mainRightDivExperience">
-                    <p class="mainParagraphExperience">
+                    <p class="paragraphPage">
                         Après l'obtention de mon BTS, ce que j'avais envie de faire était de me m'inscrire dans une formation de développeur web, 
                         j'ai cherché du travail en attendant de trouver la formation qui me correspond le mieux.
 
@@ -142,12 +147,12 @@
                 </div>
 
                 <div class="mainLeftDivExperience">
-                    <h3 class="mainTitleExperience">MacDonald's</h3>
+                    <h3 class="mainTitlePage">MacDonald's</h3>
                     <img class="mainImgExperience" src="images/mcdo.png">
                 </div>
 
                 <div class="mainRightDivExperience">
-                    <p class="mainParagraphExperience">
+                    <p class="paragraphPage">
                         Toujours en recherche de formation et après avoir finis mon contrat avec Candé Fruit, je cherche à nouveau
                         un job, MacDo s'est souvenu que j'avais postulé sur leur site et ils m'ont rappelé.
 
@@ -175,60 +180,60 @@
             <section class="mainSectionTravaux">
                 <!-- 5 div contenant un titre une image et 2 paragraphes -->
                 <div class="mainDivTravaux">
-                    <h3 class="mainTitleTravaux">OShop</h3>
+                    <h3 class="mainTitlePage">OShop</h3>
                     <img class="mainImgTravaux" src="images/OShop.png" alt="Image représentant une boutique en ligne avec une liste d'article">
-                    <p class="mainParagraphTravaux">
+                    <p class="paragraphPageTravaux">
                         Description : OShop est une conception de boutique en ligne permettant d'acheter des articles en
                         fonction d'une catégorie, marque, type de produit sélectionner,
                         vous pouvez voir sur la page d'accueil 5 catégories de produits, ainsi que les produits associés
                         à cette catégorie, vous pouvez voir également la fiche du produit en détail.
                     </p>
-                    <p class="mainParagraphTravaux">
+                    <p class="paragraphPageTravaux">
                         Technologie et concept utilisés: <span><tag class="mainTagTravaux">PHP</tag> - <tag class="mainTagTravaux">Architecture Model Vue Contrôleur</tag> - <tag class="mainTagTravaux">BDD</tag> - <tag class="mainTagTravaux">Programmation Orienté Objet</tag></span>
                     </p>
                 </div>
 
                 <div class="mainDivTravaux">
-                    <h3 class="mainTitleTravaux">OBlog</h3>
+                    <h3 class="mainTitlePage">OBlog</h3>
                     <img class="mainImgTravaux" src="images/OBlog.png" alt="Image représentant un contenu pour éditer des articles">
-                    <p class="mainParagraphTravaux">
+                    <p class="paragraphPageTravaux">
                         Description: OBlog est une conception de site permettant de mettre des articles, c'est une sorte de blog collaboratif, les articles sont listés selon une catégorie et un auteur,
                         vous pouvez également sélectionner un auteur pour voir tout les articles qu'il a écrit, ainsi qu'une catégorie pour voir quel article y est associé. 
                     </p>
-                    <p class="mainParagraphTravaux">
+                    <p class="paragraphPageTravaux">
                         Technologie et concept utilisés: <span><tag class="mainTagTravaux">PHP</tag> - <tag class="mainTagTravaux">BDD</tag> - <tag class="mainTagTravaux">Programmation Orienté Objet</tag></span>
                     </p>
                 </div>
 
                 <div class="mainDivTravaux">
-                    <h3 class="mainTitleTravaux">Kiemtao</h3>
+                    <h3 class="mainTitlePage">Kiemtao</h3>
                     <img class="mainImgTravaux" src="images/Kiemtao.png" alt="Image représentant un site pour décrire s'est humeurs">
-                    <p class="mainParagraphTravaux">
+                    <p class="paragraphPageTravaux">
                         Description: Kiemtao est un site permettant de s'inscrire à un formulaire pour ajouter s'est humeurs, un mode #fof disponible(comme le mode sombre sur twitter mais flashy). 
                     </p>
-                    <p class="mainParagraphTravaux">
+                    <p class="paragraphPageTravaux">
                         Technologie et concept utilisés: <span><tag class="mainTagTravaux">PHP</tag> - <tag class="mainTagTravaux">BDD</tag> - <tag class="mainTagTravaux">Programmation Orienté Objet</tag> - <tag class="mainTagTravaux">Cookies</tag></span>
                     </p>
                 </div>
 
                 <div class="mainDivTravaux">
-                    <h3 class="mainTitleTravaux">TodoList</h3>
+                    <h3 class="mainTitlePage">TodoList</h3>
                     <img class="mainImgTravaux" src="images/TodoList.png" alt="Image représentant un site permettant de lister les choses que vous avez à faire">
-                    <p class="mainParagraphTravaux">
+                    <p class="paragraphPageTravaux">
                         Description: Le site TodoList permet d'ajouter des choses à faire, vous pouvez les archiver, les supprimer, c'est une sorte de pense-bête ou d'aide mémoire. 
                     </p>
-                    <p class="mainParagraphTravaux">
+                    <p class="paragraphPageTravaux">
                         Technologie et concept utilisés: <span><tag class="mainTagTravaux">PHP</tag> - <tag class="mainTagTravaux">BDD</tag> - <tag class="mainTagTravaux">Programmation Orienté Objet</tag> - <tag class="mainTagTravaux">JS</tag> - <tag class="mainTagTravaux">API</tag> - <tag class="mainTagTravaux">Evènement et Intéraction DOM</tag></span>
                     </p>
                 </div>
 
                 <div class="mainDivTravaux">
-                    <h3 class="mainTitleTravaux">Invaders</h3>
+                    <h3 class="mainTitlePage">Invaders</h3>
                     <img class="mainImgTravaux" src="images/Invaders.png" alt="Image représentant un site ou l'on peur choisir d'afficher un modèle">
-                    <p class="mainParagraphTravaux">
+                    <p class="paragraphPageTravaux">
                         Description: Space Invaders permet de choisir son modèle à afficher en cliquant sur des boutons. 
                     </p>
-                    <p class="mainParagraphTravaux">
+                    <p class="paragraphPageTravaux">
                         Technologie et concept utilisés: <span><tag class="mainTagTravaux">JS</tag> - <tag class="mainTagTravaux">Evènement et Intéraction DOM</tag></span>
                     </p>
                 </div>
@@ -237,18 +242,21 @@
         
         <hr>
 
+        <!-- Footer bas de la page avec 2 section, une pour les réseaux et l'autre la partie contact -->
         <footer class="downPage">
             <section class="downSectionSocialMedia">
-                <h3 class="downTitle">Réseaux Sociaux :</h3> 
+                <h2 class="downTitle">Réseaux Sociaux :</h2> 
                 <div class="downDivLogo">
-                    <div class="iconLogo"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"><a class="iconLien" href="https://www.linkedin.com/in/justinbellanger/"></a></i></div>
-                    <div class="iconLogo"><i class="fa fa-github-square fa-3x" aria-hidden="true"><a class="iconLien" href="https://github.com/Justin49"></a></i></div>
+                    <div class="iconLogo"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></div>
+                    <div class="iconLogo"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></div>
                 </div>
             </section>
 
             <section class="downSectionContact">
-                <h3 class="downTitle">Contact : <span class="downSectionContactMailAndNumber">justin.bell@hotmail.fr - 06 95 91 57 13</span></h3> 
+                <h2 class="downTitle">Contact : <span class="downSectionContactMailAndNumber">justin.bell@hotmail.fr - 06 95 91 57 13</span></h2> 
             </section>
         </footer>
+
+        <script src="scripts/app.js"></script>
     </body>
 </html> 
