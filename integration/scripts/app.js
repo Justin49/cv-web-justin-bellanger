@@ -43,7 +43,7 @@ let app = {
         const elementTitleH3 = document.querySelectorAll('.mainTitlePage');
         
         app.darkModeActivate = !app.darkModeActivate;
-
+        
        /* Si le bouton est cliqué alors on ajoute une classe (styles mode sombre) aux différents éléments */
        if(app.darkModeActivate === true) { 
 
@@ -87,14 +87,12 @@ let app = {
 
                 app.itemTitleH3.classList.add('h3DarkStyle');
             }
-
-            app.elementBouttonDarkMode.innerHTML = "Activer le mode clair";
-            app.elementBouttonDarkMode.classList.add('buttonDarkModeStyle');
-
+             
+            app.elementBouttonDarkMode.textContent = "Activer le mode clair";
+            app.elementBouttonDarkMode.classList.add('buttonDarkModeStyle');           
             
             
-            
-         /* Sinon si darkModeActivate = false on revient au style d'avant */
+         /* Sinon si darkModeActivate === false on revient au style d'avant */
        } else {
 
             elementBody.classList.remove('bodyDarkStyle');
@@ -134,8 +132,10 @@ let app = {
                 app.itemTitleH3.classList.remove('h3DarkStyle');
             }
 
-            app.elementBouttonDarkMode.innerHTML = "Activer le mode sombre";
-            app.elementBouttonDarkMode.classList.remove('buttonDarkModeStyle');
+            app.elementBouttonDarkMode.textContent = "Activer le mode sombre";
+            app.elementBouttonDarkMode.classList.remove('buttonDarkModeStyle');    
+
+           
 
        }
   
