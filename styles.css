@@ -229,7 +229,13 @@ h2 {
 /* Image, section travaux */
 .mainImgTravaux {
 
-    width: 50%;
+    width: 100%;
+}
+
+.mainImgHigher {
+
+    width: 60%;
+    height: auto;
 }
 
 
@@ -307,7 +313,15 @@ h2 {
         margin-left: auto;
         margin-right: auto;
     }
+    .mainImgTravaux {
 
+        width: 100%;
+        
+    }
+    .mainImgHigher {
+
+        width: 100%;
+    }
 } 
 
 @media screen and (min-width: 900px) 
@@ -340,7 +354,7 @@ h2 {
     }
     .mainDivFormations {
 
-        width: 60%;
+        width:60%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -349,6 +363,10 @@ h2 {
         width: 60%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .mainDivTravaux {
+
+        width: 80%;
     }
 }
 
