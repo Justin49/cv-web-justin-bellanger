@@ -138,7 +138,7 @@ h2 {
 
     width: 150px;
     height: 150px;
-    transform: rotate(90deg);/* Propriété qui va axer l'image sur un point d'origine, ici on tourne à 90° autour de son point */
+    /*transform: rotate(90deg);*//* Propriété qui va axer l'image sur un point d'origine, ici on tourne à 90° autour de son point */
     border-width: 2px;
     border-style: outset;/* Bordure qui fait apparaître l'élément en relief */
     border-color: #FACC2E;
