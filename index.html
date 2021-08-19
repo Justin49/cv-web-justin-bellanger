@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Justin Bellanger" />
+        <meta name="description" content="Site web pour me présenter"/>
+        <meta name="keywords" content="formations, expériences, travaux">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cookie&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <title>Web CV Justin Bellanger</title>
+    </head>
+
+    <body class="bodyPage">
+        <!-- Header haut de la page avec une image séparant mon prénom et mon nom -->
+        <header class="highPage">
+            <h1 class="highTitleName">Justin</h1>
+            <img class="highPicture" src="images/image_justin_bellanger.jpg" alt="Moi, Justin Bellanger pris en photo dans la cuisine">
+            <h1 class="highTitleLastName">Bellanger</h1>
+        </header>
+
+        <hr>
+        
+        <!-- Main corps de la page -->
+        <main class="mainPage">
+            <!-- Menu de navigation avec 4 boutons, représentant les 4 parties du site -->
+            <nav class="nav">
+                <button class="btn"><a href="#introduction" class="linkPage">Introduction</a></button>
+                <button class="btn"><a href="#formations" class="linkPage">Formations</a></button>
+                <button class="btn"><a href="#expériences" class="linkPage">Expériences</a></button>
+                <button class="btn"><a href="#travaux" class="linkPage">Travaux</a></button>
+            </nav>
+
+            <!-- Boutton qui va changer l'apparence du site -->
+            <div class="changeColor">
+                <button id="darkMode">Activer le mode sombre</button>
+            </div>
+
+            <!-- Titre première partie -->
+            <h2 id="introduction">Introduction</h2>
+            <!-- Section introduction avec 3 paragraphes -->
+            <section class="presentation">
+                <p class="paragraphPage">Je m'appelle Justin Bellanger j'ai 23 ans et je vis près d'Angers.
+                    j'aime lire, faire du sport (courrir, nager), jouer au jeux vidéos, regarder des films et des séries et pleins d'autres choses.
+                    Je suis quelqu'un de timide et reserver mais curieux, persévérant et j'ai l'envie d'apprendre.
+                </p>
+            </section>
+
+            <hr>
+
+            <!-- Titre 2ème partie -->
+            <h2 id="formations">Formations</h2>
+            <!-- Section formation avec 3 paragraphes -->
+            <section class="mainDivFormations">
+                <p class="paragraphPage">
+                    Mon parcours lycée commence de 2015 à 2017 ou j'ai fait un Bac Techno STI2D option Systèmes d'Information et Numérique.
+                    Cette option nous amenait à étudier les méthodes de transmission avec le numérique.
+                    J'y ai étudier aussi les cartes électroniques (les composants et leur rôle dans la carte).
+                </p>
+                    
+                <p class="paragraphPage"> 
+                    De 2017 à 2019, j'ai poursuivis mes études dans la continuité de mon cursus BAC avec un BTS Systèmes Numériques option A : Informatique et Réseaux.
+                    Dans ce BTS scindé principalement en 2 parties (partie dèv logiciel et partie réseaux), 
+                    en dèv logiciel on apprenait les langages C/C++, le concept de programmation orienté objet, 
+                    les classes etc... 
+                    En réseaux (partie très théorique), j'ai vu l'adressage ip (plage d'adresse disponible),
+                    différent protocoles (ARP, IMCP, TCP/IP), on a aussi vu la plannification et la gestion de projet.
+                </p>
+
+                <p class="paragraphPage">
+                    Du 09/03/2020 au 15/06/2020, en plein pendant la période du confinement j'ai fait une formation de développeur web d'une durée de 3 mois (448h) avec l'école O'Clock en 100% à distance 
+                    de chez moi. Durant la formation, j'ai appris les langages côté front (Html, CSS, JavaScript) et côté 
+                    back (PHP et MySql) mais aussi Bootstrap, j'ai également vu plusieurs
+                    concept tel que la programmation Orienté Objet, l'architecture Model Vue Controleur, les API et aussi GIT 
+                    le logiciel de versionning. 
+                </p>             
+            </section>
+
+            <hr>
+            
+            <!-- Titre 3ème partie -->
+            <h2 id="expériences">Expériences</h2>
+            <!-- Section avec 6 divs chacunes -->
+            <section class="mainSectionExperience">
+                <!-- La div contient une image et un titre -->
+                <div class="mainLeftDivExperience">
+                    <h3 class="mainTitlePage">KLS-Concept</h3>
+                    <img class="mainImgExperience" src="images/KLS-concept.png" alt="L'entreprise KLS-Concept ou j'ai fait mon stage en télétravail juste après O'Clock">
+                </div>
+                <!-- La div contient un paragraphe descriptif -->
+                <div class="mainRightDivExperience">
+                    <p class="paragraphPage">
+                        C’est grâce à Linkendin que j’ai trouvé le stage, Monsieur Kulas Frédéric mon maître de stage faisait partie d’une ancienne promo de chez O’Clock, il m’a proposé un stage car j’avais déjà eu une expérience avec le Framework Angular avec mon précédent stage.
+
+                        Un ami à mon maître de stage à monter un site avec lui pour l’aide à la logistique et la gestion de pièces et équipement pour particuliers et entreprises.
+
+                        Le sujet de stage était de faire l’application GSE Web mobile permettant de visualiser les commandes de pièces passé sur le site ainsi que d'autres fonctionnalités comme scanner un produit ou accéder à son inventaire.
+
+                        Je devais réaliser l’application à l’aide d’Angular 11 dernière version du Framework et Ionic version 5, un framework qu’on utilise pour des applications mobiles Hybride à la fois pour IOS et Android.
+
+                        Je prenais des notes quasiment chaque jour sur ce que je faisais la journée.
+
+                        Le stage m’a permis de passer pas mal de temps en autonomie, quand j’avais un problème je cherchai au maximum (souvent sur stackoverflow) avant d’essayer de demander de l’aide à mon maître de stage.
+
+                        Même si ce stage m’a été très bénéfique, la distance n’a pas rendu possible un encadrement et un accompagnement permettant d’entrer directement dans le monde professionnel.
+                    </p>
+                </div>
+
+                <!-- La div contient une image et un titre -->
+                <div class="mainLeftDivExperience">
+                    <h3 class="mainTitlePage">Acoss Nancy</h3>
+                    <img class="mainImgExperience" src="images/acoss.png" alt="L'entreprise Acoss à Nancy ou j'ai fait mon stage">
+                </div>
+                <!-- La div contient un paragraphe descriptif -->
+                <div class="mainRightDivExperience">
+                    <p class="paragraphPage">
+                        Dans le cadre de mon BTS, j'ai effectué un stage me permettant d'acquérir de l'expérience mais
+                        aussi de rentrer plus en profondeur dans le monde de l'entreprise.
+
+                        Le stage c'est fait à l'Acoss Nancy, une entreprise qui gère et traîte informatiquement les dossiers des clients 
+                        Urssaf.
+
+                        La refonte du site se faisait à l'aide d'Angular le Framework Front-end de Google, j'ai pendant une semaine et demi et un peu avant le stage pratiquer Angular car je
+                        le rappel je n'avais à par Html/CSS que j'ai appris par moi-même aucune connaissance en développement web avec mon BTS qui était orienté dèv logiciel et réseaux.
+
+                        J'étais avec une autre stagiaire qui était elle en licence informatique, nous avons d'abord fait le tutoriel la tour des héros qui avait
+                        pour but de nous amener à découvrir les notions/concepts d'Angular comme les routes, composants, modules etc..., puis nous nous sommes
+                        lancé dans le sujet. 
+
+                        Ce stage m'à conforter dans l'idée de vouloir faire du développement web.
+                    </p>
+                </div>   
+            </section>
+
+            <hr>
+
+            <!-- Titre de la 4ème partie -->
+            <h2 id="travaux">Travaux</h2>
+            <!-- Section avec 5 div -->
+            <section class="mainSectionTravaux">
+                <!-- 5 div contenant un titre une image et 4 paragraphes -->
+                <div class="mainDivTravaux">
+                    <h3 class="mainTitlePage">OShop</h3>
+                    <img class="mainImgTravaux" src="images/OShop.png" alt="Image représentant une boutique en ligne avec une liste d'article">
+                    <p class="paragraphPageTravaux">
+                        Description : OShop est une conception de boutique en ligne permettant d'acheter des articles en
+                        fonction d'une catégorie, marque, type de produit sélectionner,
+                        vous pouvez voir sur la page d'accueil 5 catégories de produits, ainsi que les produits associés
+                        à cette catégorie, vous pouvez voir également la fiche du produit en détail.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Contexte du projet : projet réalisé avec O'Clock.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Outils et Technologies pratiqués: <span><tag class="mainTagTravaux">PHP</tag> - <tag class="mainTagTravaux">MySql</tag></span>
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Compétences travaillées : <span><tag class="mainTagTravaux">POO</tag> - <tag class="mainTagTravaux">Architecture MVC</tag></span>
+                    </p>
+                </div>
+
+                <div class="mainDivTravaux">
+                    <h3 class="mainTitlePage">OBlog</h3>
+                    <img class="mainImgTravaux" src="images/OBlog.png" alt="Image représentant un contenu pour éditer des articles">
+                    <p class="paragraphPageTravaux">
+                        Description: OBlog est une conception de site permettant de mettre des articles, c'est une sorte de blog collaboratif, les articles sont listés selon une catégorie et un auteur,
+                        vous pouvez également sélectionner un auteur pour voir tout les articles qu'il a écrit, ainsi qu'une catégorie pour voir quel article y est associé. 
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Contexte du projet : projet réalisé avec O'Clock.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Outils et Technologies pratiqués: <span><tag class="mainTagTravaux">PHP</tag> - <tag class="mainTagTravaux">MySql</tag></span>
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Compétences travaillées : <span><tag class="mainTagTravaux">POO</tag> - <tag class="mainTagTravaux">Base de donnée</tag></span>
+                    </p>
+                </div>
+
+                <div class="mainDivTravaux">
+                    <h3 class="mainTitlePage">Kiemtao</h3>
+                    <img class="mainImgTravaux" src="images/Kiemtao.png" alt="Image représentant un site pour décrire s'est humeurs">
+                    <p class="paragraphPageTravaux">
+                        Description: Kiemtao est un site permettant de s'inscrire à un formulaire pour ajouter s'est humeurs, un mode #fof disponible(comme le mode sombre sur twitter mais flashy). 
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Contexte du projet : projet réalisé avec O'Clock.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Outils et Technologies pratiqués: <span><tag class="mainTagTravaux">PHP</tag> - <tag class="mainTagTravaux">MySql</tag></span>
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Compétences travaillées : <span><tag class="mainTagTravaux">POO</tag> - <tag class="mainTagTravaux">Cookie</tag></span>
+                    </p>
+                </div>
+
+                <div class="mainDivTravaux">
+                    <h3 class="mainTitlePage">TodoList</h3>
+                    <img class="mainImgTravaux" src="images/TodoList.png" alt="Image représentant un site permettant de lister les choses que vous avez à faire">
+                    <p class="paragraphPageTravaux">
+                        Description: Le site TodoList permet d'ajouter des choses à faire, vous pouvez les archiver, les supprimer, c'est une sorte de pense-bête ou d'aide mémoire. 
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Contexte du projet : projet réalisé avec O'Clock.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Outils et Technologies pratiqués: <span><tag class="mainTagTravaux">HTML</tag> - <tag class="mainTagTravaux">CSS</tag> - <tag class="mainTagTravaux">PHP</tag> - <tag class="mainTagTravaux">MySql</tag> - <tag class="mainTagTravaux">JS</tag></span>
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Compétences travaillées : <span><tag class="mainTagTravaux">API</tag> - <tag class="mainTagTravaux">Module JavaScript</tag></span>
+                    </p>
+                </div>
+
+                <div class="mainDivTravaux">
+                    <h3 class="mainTitlePage">Invaders</h3>
+                    <img class="mainImgTravaux" src="images/Invaders.png" alt="Image représentant un site ou l'on peur choisir d'afficher un modèle">
+                    <p class="paragraphPageTravaux">
+                        Description: Space Invaders permet de choisir son modèle à afficher en cliquant sur des boutons. 
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Contexte du projet : projet réalisé avec O'Clock.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Outils et Technologies pratiqués: <span><tag class="mainTagTravaux">HTML</tag> - <tag class="mainTagTravaux">CSS</tag> - <tag class="mainTagTravaux">JS</tag></span>
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Compétences travaillées : <span><tag class="mainTagTravaux">Interaction avec le DOM</tag> - <tag class="mainTagTravaux">Boucle</tag> - <tag class="mainTagTravaux">Condition</tag></span>
+                    </p>
+                </div>
+
+                <div class="mainDivTravaux">
+                    <h3 class="mainTitlePage">Snake</h3>
+                    <img class="mainImgTravaux" src="images/snake.png" alt="Image représentant un serpent devant manger un fruit pour que le score du joueur augmente">
+                    <p class="paragraphPageTravaux">
+                        Description: Le jeu du serpent est un jeu ou le serpent représentée par le rectangle jaune doit manger le fruit représentée par le carré rouge, si le fruit est manger le score du joueur augmente de 1, si le serpent se mord la queue où se prend un des murs, le jeu recommence à 0. 
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Contexte du projet : projet personnel.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                      Outils et Technologies pratiqués: <span><tag class="mainTagTravaux">HTML</tag> - <tag class="mainTagTravaux">CSS</tag> - <tag class="mainTagTravaux">JS</tag></span>
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Compétences travaillées : <span><tag class="mainTagTravaux">Algorithmie</tag> - <tag class="mainTagTravaux">Boucle</tag> - <tag class="mainTagTravaux">Condition</tag> - <tag class="mainTagTravaux">Objet</tag> - <tag class="mainTagTravaux">Tableau</tag></span>
+                    </p>
+                </div>
+
+                <div class="mainDivTravaux">
+                    <h3 class="mainTitlePage">Game Of Life</h3>
+                    <img class="mainImgTravaux" src="images/game_of_life.png" alt="Image représentant des cellules dont l'état varie à chaque étape">
+                    <p class="paragraphPageTravaux">
+                        Description: Le jeu de la vie est un jeu qui nécessite l'intervention d'aucun joueur lors de son déroulement, une cellule possède 8 voisins qui sont ses cellules adjacentes, à chaque étape l'évolution d'une cellule est déterminée par l'état de ses 8 voisins.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Contexte du projet : projet personnel.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                      Outils et Technologies pratiqués: <span><tag class="mainTagTravaux">HTML</tag> - <tag class="mainTagTravaux">CSS</tag> - <tag class="mainTagTravaux">JS</tag></span>
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Compétences travaillées : <span><tag class="mainTagTravaux">Algorithmie</tag> - <tag class="mainTagTravaux">Boucle</tag> - <tag class="mainTagTravaux">Condition</tag> - <tag class="mainTagTravaux">Tableau</tag></span>
+                    </p>
+                </div>
+
+                <div class="mainDivTravaux">
+                    <h3 class="mainTitlePage">Morpion</h3>
+                    <img class="mainImgTravaux" src="images/morpion.png" alt="Image représentant un carré 3*3 devant être compléter de symbole X ou O par 2 joueurs">
+                    <p class="paragraphPageTravaux">
+                        Description: Le morpion ou tic-tac-toe est un jeu se jouant à 2 joueurs sur un carré de 3*3 cases, les joueurs doivent mettre des symboles, soit X soit O, un joueur gagne quand une des colonnes, lignes ou diagonale est remplie par trois mêmes symboles.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Contexte du projet : projet personnel.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                      Outils et Technologies pratiqués: <span><tag class="mainTagTravaux">HTML</tag> - <tag class="mainTagTravaux">CSS</tag> - <tag class="mainTagTravaux">JS</tag></span>
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Compétences travaillées : <span><tag class="mainTagTravaux">Algorithmie</tag> - <tag class="mainTagTravaux">Boucle</tag> - <tag class="mainTagTravaux">Condition</tag> - <tag class="mainTagTravaux">Tableau</tag> - <tag class="mainTagTravaux">Interaction avec le DOM</tag></span>
+                    </p>
+                </div>
+
+                <div class="mainDivTravaux">
+                    <h3 class="mainTitlePage">Quiz Série Télé</h3>
+                    <img class="mainImgTravaux" src="images/quiz_series_tv.png" alt="Image représentant un quiz, 1 question et 4 propositions de réponses">
+                    <p class="paragraphPageTravaux">
+                        Description: L’utilisateur répond aux 10 questions du quiz, à la fin le jeu vous donnes votre nombre de bonnes réponses.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Contexte du projet : projet personnel.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                      Outils et Technologies pratiqués: <span><tag class="mainTagTravaux">HTML</tag> - <tag class="mainTagTravaux">CSS</tag> - <tag class="mainTagTravaux">JS</tag></span>
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Compétences travaillées : <span><tag class="mainTagTravaux">Algorithmie</tag> - <tag class="mainTagTravaux">Boucle</tag> - <tag class="mainTagTravaux">Condition</tag> - <tag class="mainTagTravaux">Interaction avec le DOM</tag></span>
+                    </p>
+                </div>
+
+                <div class="mainDivTravaux">
+                    <h3 class="mainTitlePage">Calculette</h3>
+                    <img class="mainImgTravaux mainImgHigher" src="images/calculatrice.png" alt="Image représentant une calculette, permettant de faire des opérations simples">
+                    <p class="paragraphPageTravaux">
+                        Description: Représentation d’une calculatrice permettant de faire des opérations simples, additionner, soustraire, multiplier et diviser.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Contexte du projet : projet personnel.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                      Outils et Technologies pratiqués: <span><tag class="mainTagTravaux">HTML</tag> - <tag class="mainTagTravaux">CSS</tag> - <tag class="mainTagTravaux">JS</tag></span>
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Compétences travaillées : <span><tag class="mainTagTravaux">Algorithmie</tag> - <tag class="mainTagTravaux">Grid</tag> - <tag class="mainTagTravaux">Condition</tag> - <tag class="mainTagTravaux">Interaction avec le DOM</tag> - <tag class="mainTagTravaux">Keycode</tag></span>
+                    </p>
+                </div>
+
+                <div class="mainDivTravaux">
+                    <h3 class="mainTitlePage">Interface PS5</h3>
+                    <img class="mainImgTravaux" src="images/interface_PS5.png" alt="Image représentant l'interface de la page d'accueil de la PS5">
+                    <p class="paragraphPageTravaux">
+                        Description: L'interface représente la page d'accueil de la PS5, l'image de fond change en fonction de la vignette cliqué.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Contexte du projet : projet personnel.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                      Outils et Technologies pratiqués: <span><tag class="mainTagTravaux">HTML</tag> - <tag class="mainTagTravaux">CSS</tag> - <tag class="mainTagTravaux">JS</tag></span>
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Compétences travaillées : <span><tag class="mainTagTravaux">Intégration HTML/CSS</tag> - <tag class="mainTagTravaux">Positions</tag> - <tag class="mainTagTravaux">Disposition avec Flex</tag> - <tag class="mainTagTravaux">Librairie JQuery pour les animations du carroussel de vignette</tag></span>
+                    </p>
+                </div>
+
+                <div class="mainDivTravaux">
+                    <h3 class="mainTitlePage">Awesome-list</h3>
+                    <img class="mainImgTravaux" src="images/awesome-list.png" alt="Image représentant un site permettant de gérer sa productivité et son agenda personnel">
+                    <p class="paragraphPageTravaux">
+                        Description: Site permettant de gérer sa productivité et créer son agenda avec un planning, chaque utilisateur peut se connecter avec son compte et accéder à son propre agenda
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Contexte du projet : projet réalisé en stage.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                      Outils et Technologies pratiqués: <span><tag class="mainTagTravaux">Angular</tag> - <tag class="mainTagTravaux">Bootstrap</tag> - <tag class="mainTagTravaux">Firebase</tag> - <tag class="mainTagTravaux">TypeScript</tag></span>
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Compétences travaillées: <span><tag class="mainTagTravaux">API</tag> - <tag class="mainTagTravaux">Composant</tag> - <tag class="mainTagTravaux">Service</tag> - <tag class="mainTagTravaux">Formulaire réactif</tag> - <tag class="mainTagTravaux">Architecture de l'appliction</tag> - <tag class="mainTagTravaux">Login</tag></span>
+                    </p>
+                </div>
+
+                <div class="mainDivTravaux">
+                    <h3 class="mainTitlePage">GSE-Web-mobile</h3>
+                    <img class="mainImgTravaux mainImgHigher" src="images/GSE_Web_Mobile.png" alt="Image représentant la page d'accueil de l'application GSE Web mobile ">
+                    <p class="paragraphPageTravaux">
+                        Description: L'application GSE Web Mobile est un complément au site GSE Web permettant à l'utilisateur s'ayant inscrit sur le site de visualiser les commandes de pièces ou d'équipements qu'il aura passé, il pourra aussi accèder à son inventaire et suivre sa commande,
+                        il pourra scanner un produit q'il pourra commander par la suite.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Contexte du projet : projet réalisé en stage.
+                    </p>
+                    <p class="paragraphPageTravaux">
+                      Outils et Technologies pratiqués: <span><tag class="mainTagTravaux">Angular</tag> - <tag class="mainTagTravaux">Ionic</tag> - <tag class="mainTagTravaux">TypeScript</tag></span>
+                    </p>
+                    <p class="paragraphPageTravaux">
+                        Compétences travaillées: <span><tag class="mainTagTravaux">API</tag> - <tag class="mainTagTravaux">Composant</tag> - <tag class="mainTagTravaux">Service</tag> - <tag class="mainTagTravaux">Formulaire réactif</tag> - <tag class="mainTagTravaux">Architecture de l'appliction</tag> - <tag class="mainTagTravaux">Login</tag></span>
+                    </p>
+                </div>
+            </section>
+        </main>
+        
+        <hr>
+
+        <!-- Footer bas de la page avec 2 section, une pour les réseaux et l'autre la partie contact -->
+        <footer class="downPage">
+            <section class="downSectionContact">
+                <h2 class="downTitle">Contact : <span class="downSectionContactMailAndNumber">justin.bell@hotmail.fr - 06 95 91 57 13</span></h2> 
+            </section>
+        </footer>
+        
+        <script src="scripts/app.js"></script>
+    </body>
+</html> 

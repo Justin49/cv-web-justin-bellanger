@@ -1,0 +1,420 @@
+/* Style Globaux */
+
+/* Corps de la page*/
+.bodyPage {
+
+    background-color: white;
+}
+
+/* Paragraphe des sections introduction, formations et expériences */
+.paragraphPage {
+
+    text-align: justify;
+    margin-top: 50px;
+    color: #585858;
+    letter-spacing: 0.1em;
+    padding-left: 10px;
+    line-height: 2rem;/* Espacement entre les lignes */
+}
+
+/* Paragraphe, section travaux */
+.paragraphPageTravaux {
+
+    text-align: justify;
+    color: #585858;
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+    padding-left: 10px;
+    line-height: 1.5rem;
+    margin-top: 5px;
+
+}
+
+/* Lien des boutons */
+.linkPage {
+
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 0.25em;
+    color: #585858;
+}
+
+/* Tag, section travaux */
+.mainTagTravaux {
+
+    background-color: #FACC2E;
+    border-style: none;
+    margin-top: 2px;
+    padding: 3px;
+
+}
+
+/* Titre, section travaux */
+.mainTitlePage {
+
+    color: #585858;
+    text-align: center;
+    letter-spacing: 0.25em;
+}
+
+/* Titre principale */
+h1 {
+
+    font-family: Cookie;
+    letter-spacing: 0.25em;
+    font-size: 25px;
+    margin-top: 45px;
+    color: #FACC2E;
+
+}
+/* Barre de délimitation entre les parties */
+hr {
+
+    background-color: #FACC2E;
+    height: 1px;
+    width: 80%;
+}
+/* Titres des parties */
+h2 {
+
+    margin-top: 100px;
+    text-align: center;
+    color: #FACC2E;
+    letter-spacing: 0.25em;
+}
+
+/* Style à activer pour le mode sombre*/
+.pDarkStyle {
+
+    color: white;
+}
+
+.h3DarkStyle {
+
+    color: white;
+}
+
+.bodyDarkStyle {
+
+    background-color: #585858;
+}
+
+.aDarkStyle {
+
+    color: white;
+}
+
+.buttonDarkModeStyle {
+
+    color: #585858;
+    background-color: white;
+}
+
+.tagDarkStyle {
+
+    color: white;
+}
+
+/* Style du Header */
+
+.highPage {
+
+    width: 100%;/* Le header va prendre toute la largeur de la page */
+    display: flex;/* Le header va être flexible et on pourra agencer son contenu */
+    justify-content: space-between;/* Le contenu du header s'affiche en ligne avec des espaces entre chaque éléments */
+}
+
+.highTitleName {
+
+    margin-left: 20px;
+}
+
+.highTitleLastName {
+
+    margin-right: 20px;
+}
+
+.highPicture {
+
+    width: 150px;
+    height: 150px;
+    transform: rotate(90deg);/* Propriété qui va axer l'image sur un point d'origine, ici on tourne à 90° autour de son point */
+    border-width: 2px;
+    border-style: outset;/* Bordure qui fait apparaître l'élément en relief */
+    border-color: #FACC2E;
+    border-radius: 50%;
+}
+
+/* Style du Main */
+
+/* Le nav qui contient les 4 bouttons */
+.nav {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;/* Les boutons sont affiché en colonne */
+
+}
+/* Bouttons du menu */
+.btn {
+
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    background-color: #FACC2E;
+    border: none;
+}
+/* Effet au survol du boutton */
+.btn:hover {
+
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 4px #585858;
+    transition: 0.3s;
+}
+/* Boutton pour changer l'apparence du site */
+#darkMode {
+
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 32%;
+    background-color: #585858;
+    color: white;
+    border: none;
+}
+/* Effet au survol du boutton */
+#darkMode:hover {
+
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 4px #585858;
+    transition: 0.3s;
+}
+/* La div (gauche->penser pour flexbox) contenant un titre et une image, section expériences */
+.mainLeftDivExperience {
+
+    width: 80%;/* La div prend 80% dans la largeur de la page */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;/* Affichage pour gérer le contenu à l'intérieur de la div */
+    flex-direction: column;
+    align-items: center;/* Centrer l'image au centre sur l'axe transversal */
+    justify-content: center;/* Centrer l'image sur la ligne */
+}
+/* Titre de la div de (gauche) section expériences */
+.mainTitleExperience {
+
+    color: #585858;
+    text-align: center;
+    letter-spacing: 0.25em;
+}
+/* Image de la div de (gauche) section expériences */
+.mainImgExperience {
+
+    width: 25%;
+}
+/* La Div qui contient un titre une image et 2 paragraphes, section travaux */
+.mainDivTravaux {
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Image, section travaux */
+.mainImgTravaux {
+
+    width: 100%;
+}
+
+.mainImgHigher {
+
+    width: 60%;
+    height: auto;
+}
+
+
+/* Style du Footer */
+
+/* Titre du footer */
+.downTitle {
+
+    color: #FACC2E;
+    text-align: center;
+}
+/* Div entourant les deux logos, fait partie de la section social media du footer */
+.downDivLogo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+/* Icône */
+.buttonLogo {
+
+    width: 150px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 600px) 
+{
+    /* Tablettes */
+    .highTitleName {
+
+        margin-left: 20px;
+        letter-spacing: 0.5em;
+        font-size: 30px;
+    }
+    .highTitleLastName {
+
+        margin-right: 20px;
+        letter-spacing: 0.5em;
+        font-size: 30px;
+    }
+    .nav {
+
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;/* A 600px le menu avec les boutons seront sur une seule ligne */
+    }
+    .btn {
+
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #darkMode {
+
+        margin-left: 38%;
+    }
+    .presentation {
+
+        width: 80%;/* A 600px le contenu de la div ne prendra que 80% de sa largeur */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainDivFormations {
+
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainRightDivExperience {
+
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainImgTravaux {
+
+        width: 100%;
+        
+    }
+    .mainImgHigher {
+
+        width: 100%;
+    }
+} 
+
+@media screen and (min-width: 900px) 
+{
+    /* Tablette avec écran plus grand */
+    .highTitleName {
+
+        font-size: 40px;
+        margin-left: 30px;
+    }
+    .highTitleLastName {
+
+        font-size: 40px;
+        margin-right: 30px;
+    }
+    .btn {
+
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    #darkMode {
+
+        margin-left: 43%;
+    }
+    .presentation {
+
+        width: 60%;/* A 900px le contenu de la div ne prendra que 60% de sa largeur */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainDivFormations {
+
+        width:60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainRightDivExperience {
+
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainDivTravaux {
+
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px)
+{
+    /* Ordinateur */
+    .highTitleName {
+
+        margin-left: 200px;
+    }
+    .highTitleLastName {
+
+        margin-right: 200px;
+    }
+    .btn {
+
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    #darkMode {
+
+        margin-left: 44%;
+    }
+    .presentation {
+
+        width: 40%;/* A 1200px le contenu de la div ne prendra que 40% de sa largeur */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainDivFormations {
+
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainRightDivExperience {
+
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 1900px) {
+
+    #darkMode {
+
+        margin-left: 46%;
+    }
+}
